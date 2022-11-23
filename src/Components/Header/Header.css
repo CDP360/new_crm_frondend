@@ -1,0 +1,16 @@
+.header-container {
+    position: sticky;
+    top: 0%;
+    height: 25px;
+}
+.header-card {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
+    background-color: #FFFFFF;
+}
+.notification-img {
+    width: 25px;
+    height: 25px;
+    margin-right: 1%;
+  }

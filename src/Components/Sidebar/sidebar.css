@@ -1,0 +1,35 @@
+.sidebar-maincontainer{
+    width: 250px;
+    background-color:#313949 ;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+}
+.sidebar-heading{
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 7%;
+}
+.dashboard-block{
+    display: flex;
+    padding: 7%;
+    cursor: pointer;
+}
+.sidebar-img{
+    width: 10%;
+    height: 22px;
+    margin-top: 1%;
+}
+.sidebar-name{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 500;
+    font-size: 17px;
+    color: #FFFFFF;
+    margin-left: 5%;
+    font-family: 'Poppins';
+}
