@@ -4,8 +4,6 @@ import Dashboard from "../../Assests/dashboard-active.svg";
 import Automation from "../../Assests/Automation.svg";
 import Marketing from "../../Assests/email.svg";
 import { useNavigate } from "react-router-dom";
-import Task from "../../Assests/tasks.svg";
-import email from "../../Assests/1.svg";
 
 function Sidebar() {
   const navigate = useNavigate();
@@ -24,20 +22,10 @@ function Sidebar() {
           onClick={() => navigate("/automation")}
         >
           <img src={Automation} className="sidebar-img" />
-          <img
-            src={Task}
-            className="sidebar-img"
-            style={{ backgroundColor: "white" }}
-          />
           <p className="sidebar-name">Automation</p>
         </div>
         <div className="dashboard-block" onClick={() => navigate("/campaign")}>
           <img src={Marketing} className="sidebar-img" />
-          <img
-            src={email}
-            className="sidebar-img"
-            style={{ backgroundColor: "white" }}
-          />
           <p className="sidebar-name">Marketing</p>
         </div>
       </div>
