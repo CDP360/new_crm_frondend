@@ -13,21 +13,21 @@ function Templates() {
       <div className="automation-body-left">
         <div className="automation-left-filter">
           <img src={Folder} alt="Folder" />
-          <p>Filters</p>
+          <p style={{ marginBottom: "auto" }}>Filters</p>
         </div>
-        <hr style={{ marginTop: "-1%" }} />
+        <hr style={{ marginTop: "auto", marginBottom: "auto" }} />
         <div className="automation-left-option">
-          <p>All</p>
+          <p style={{ marginBottom: "auto", marginTop: "auto" }}>All</p>
         </div>
-        <hr style={{ marginTop: "-2.5%" }} />
+        <hr style={{ marginTop: "auto", marginBottom: "auto" }} />
         <div className="automation-left-option">
-          <p>Draft</p>
+          <p style={{ marginTop: "auto", marginBottom: "auto" }}>Draft</p>
         </div>
-        <hr style={{ marginTop: "-3.5%" }} />
-        <div>
-          <p className="automation-left-option">Published</p>
+        <hr style={{ marginTop: "auto", marginBottom: "auto" }} />
+        <div className="automation-left-option">
+          <p style={{ marginTop: "auto", marginBottom: "auto" }}>Published</p>
         </div>
-        <hr style={{ marginTop: "-4%" }} />
+        <hr style={{ marginTop: "auto", marginBottom: "auto" }} />
       </div>
       <div className="automation-body-right" style={{ height: "518px" }}>
         <Table>
@@ -67,7 +67,6 @@ function Templates() {
             </tr>
             <tr>
               <td>Demo2</td>
-
               <td>900</td>
 
               <td>
@@ -88,7 +87,6 @@ function Templates() {
             </tr>
             <tr>
               <td>Demo3</td>
-
               <td>700</td>
 
               <td>
@@ -109,7 +107,6 @@ function Templates() {
             </tr>
             <tr>
               <td>Demo4</td>
-
               <td>700</td>
 
               <td>
@@ -130,7 +127,6 @@ function Templates() {
             </tr>
             <tr>
               <td>Demo5</td>
-
               <td>700</td>
 
               <td>
@@ -151,7 +147,6 @@ function Templates() {
             </tr>
             <tr>
               <td>Demo6</td>
-
               <td>700</td>
 
               <td>
@@ -172,7 +167,6 @@ function Templates() {
             </tr>
             <tr>
               <td>Demo7</td>
-
               <td>700</td>
 
               <td>
@@ -193,7 +187,6 @@ function Templates() {
             </tr>
             <tr>
               <td>Demo8</td>
-
               <td>700</td>
 
               <td>
