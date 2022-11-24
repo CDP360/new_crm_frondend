@@ -1,6 +1,6 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
-import Folder from "../../Assests/path.svg";
+import Filter from "../../Assests/Filter.svg";
 import edit from "../../Assests/Group 152.svg";
 import Delete from "../../Assests/Group 157.svg";
 import copy from "../../Assests/Group 156.svg";
@@ -12,7 +12,7 @@ function Tablecampaign() {
     <div className="automation-body">
       <div className="automation-body-left">
         <div className="automation-left-filter">
-          <img src={Folder} alt="Folder" />
+          <img src={Filter} alt="Folder" />
           <p style={{marginBottom:'auto'}}>Filters</p>
         </div>
         <hr style={{marginTop:'auto',marginBottom:'auto'}}/>

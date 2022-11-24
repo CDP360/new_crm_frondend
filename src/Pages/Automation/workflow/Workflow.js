@@ -1,7 +1,7 @@
 import React from "react";
 import "./workflow.css";
 import Table from "react-bootstrap/Table";
-import Folder from "../../../Assests/folder.svg";
+import Filter from "../../../Assests/Filter.svg";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import ModeIcon from "@mui/icons-material/Mode";
 
@@ -11,7 +11,7 @@ const Workflow = () => {
       <div className="automation-body">
         <div className="automation-body-left">
         <div className="automation-left-filter">
-          <img src={Folder} alt="Folder" />
+          <img src={Filter} alt="Folder" />
           <p style={{marginBottom:'auto'}}>Filters</p>
         </div>
         <hr style={{marginTop:'auto',marginBottom:'auto'}}/>
