@@ -32,7 +32,7 @@ function Dashboard() {
     });
   });
   return (
-    <div style={{height:'93vh', backgroundColor: "#dfe3de", padding: "1.5%" , overflow:'auto'}}>
+    <div style={{height:'100vh', backgroundColor: "#dfe3de", padding: "1.5%" , overflow:'auto'}}>
       <div style={{display:'flex',justifyContent:'space-between'}}>
         <div style={{backgroundColor:'white',padding:'3%',width:'18%',borderRadius:'10px'}}>
           <p style={{marginTop:'auto',marginBottom:'auto'}}>Emails Sent</p>

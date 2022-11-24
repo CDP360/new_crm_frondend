@@ -12,9 +12,9 @@ import Campaigns from "../Pages/Automation/campaigns/Campaigns";
 
 function Routers() {
   return (
-    <div>
+    <div style={{height:'100vh' ,overflow:'hidden'}}>
       <BrowserRouter>
-        <Routes>
+        <Routes >
           <Route path="" element={<MainContainer />}>
             <Route path="" element={<Dashboard />} />
             <Route path="/promotion" element={<Promotion />} />
