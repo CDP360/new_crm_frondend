@@ -51,22 +51,23 @@
   /* justify-content: space-between; */
 }
 .automation-body-left {
-  width: 30%;
+  width: 20%;
   background: white;
   /* padding-left: 2rem; */
 }
 .automation-body-right {
-  width: 70%;
+  width: 80%;
 }
 .automation-left-filter {
-  display: flex;
+  /* display: flex; */
   font-family: "Inter";
   font-weight: 500;
   font-size: 16px;
-  color: #000000;
-  width: 5rem;
-  justify-content: space-between;
-  margin-left: 2rem;
+  padding: 3%;
+  /* color: #000000; */
+  /* width: 4.5rem; */
+  /* justify-content: space-between; */
+  /* margin-left: 2rem; */
 }
 .automation-left-option {
   font-family: "Poppins";
@@ -74,7 +75,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-left: 2rem;
+  padding: 3.3%;
+  /* margin-left: 2rem; */
   /* box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.07); */
 }
 .automation-body-right {
