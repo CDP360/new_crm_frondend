@@ -48,6 +48,8 @@
 .automation-body {
   display: flex;
   padding: 1rem 2rem 1rem 2rem;
+  background-color: #dfe3de;
+  height:100vh;
   /* justify-content: space-between; */
 }
 .automation-body-left {

@@ -29,7 +29,7 @@ function Tablecampaign() {
         </div>
         <hr style={{marginTop:'auto',marginBottom:'auto'}} />
       </div>
-      <div className="automation-body-right" style={{ height: "518px" }}>
+      <div className="automation-body-right">
         <Table>
           <thead>
             <tr>

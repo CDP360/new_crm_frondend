@@ -24,8 +24,8 @@ function Headersemail() {
       style={{
         display: "flex",
         position: "sticky",
-        top: "60px",
-        border: "2px solid #dfe3de",
+        top: "45px",
+        borderBottom: "2px solid gray",
         backgroundColor: "#dfe3de",
         zIndex: "99990000000000000090808098080",
       }}

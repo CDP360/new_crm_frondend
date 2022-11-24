@@ -7,9 +7,8 @@ import Headersemail from "./Headersemail";
 function Campaign() {
   const navigate = useNavigate();
   return (
-    <div style={{ backgroundColor: "#dfe3de" }}>
+    <div>
       <Headersemail />
-      <hr style={{ position: "sticky", top: "90px" }} />
       <Outlet />
     </div>
   );

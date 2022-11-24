@@ -18,10 +18,8 @@ function Automation() {
     navigate("/automation");
   };
   return (
-    <div
-      style={{ backgroundColor: "#dfe3de", position: "sticky", top: "60px" }}
-    >
-      <div style={{ borderBottom: "2px solid rgba(49, 57, 73, 0.14)" }}>
+    <div>
+      <div style={{ borderBottom: "2px solid rgba(49, 57, 73, 0.14)",position: 'sticky',top:'50px',height:"100%",backgroundColor: "#dfe3de", }}>
         <div className="automation-container" style={{ display: "flex" }}>
           <div className="automation-header-left" style={{ display: "flex" }}>
             <p onClick={showWorkFlowBtn} style={{cursor:'pointer'}}>Workflow</p>

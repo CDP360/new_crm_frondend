@@ -7,7 +7,7 @@ import ModeIcon from "@mui/icons-material/Mode";
 
 const Workflow = () => {
   return (
-    <div>
+    <div style={{height:'80vh',overflow:'auto'}}>
       <div className="automation-body">
         <div className="automation-body-left">
         <div className="automation-left-filter">

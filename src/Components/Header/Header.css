@@ -1,7 +1,7 @@
 .header-container {
     position: sticky;
     top: 0%;
-    height: 25px;
+    height: 35px;
 }
 .header-card {
     display: flex;
