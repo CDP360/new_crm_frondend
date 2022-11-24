@@ -45,12 +45,12 @@
   /* justify-content: space-between; */
 }
 .automation-body-left {
-  width: 30%;
+  width: 20%;
   background: white;
   /* padding-left: 2rem; */
 }
 .automation-body-right {
-  width: 70%;
+  width: 80%;
 }
 .automation-left-filter {
   display: flex;
