@@ -1,16 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import Button from "@mui/material/Button";
-import Folder from "../../Assests/path.svg";
 import FolderOpenIcon from "@mui/icons-material/FolderOpen";
 import { useNavigate } from "react-router-dom";
+
 function Headersemail() {
   const navigate = useNavigate();
+  const [headerbutton, setHeaderButton] = useState(true);
+
+  const Campaigns = () => {
+    navigate("/campaign");
+    setHeaderButton(true);
+  };
+
+  const Template = () => {
+    navigate("/campaign/templetes");
+    setHeaderButton(false);
+  };
   return (
     <div
       className="automation-container"
-      style={{ display: "flex", position: "sticky", top: "60px" }}
+      style={{
+        display: "flex",
+        position: "sticky",
+        top: "60px",
+        border: "2px solid #dfe3de",
+        backgroundColor: "#dfe3de",
+        zIndex: "99990000000000000090808098080",
+      }}
     >
       <div
         className="automation-header-left"
@@ -31,12 +49,8 @@ function Headersemail() {
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item onClick={() => navigate("/campaign")}>
-              Camapign
-            </Dropdown.Item>
-            <Dropdown.Item onClick={() => navigate("/campaign/templetes")}>
-              Templates
-            </Dropdown.Item>
+            <Dropdown.Item onClick={Campaigns}>Camapign</Dropdown.Item>
+            <Dropdown.Item onClick={Template}>Templates</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
         <p>Template</p>
@@ -44,9 +58,22 @@ function Headersemail() {
         <p>Affiliate manager</p>
       </div>
       <div className="automation-header-right">
-        <Button variant="primary" startIcon={<AddCircleOutlineIcon />}>
+        {headerbutton ? (
+          <>
+            <Button variant="primary" startIcon={<AddCircleOutlineIcon />}>
+              Campaign
+            </Button>
+          </>
+        ) : (
+          <>
+            <Button variant="primary" startIcon={<AddCircleOutlineIcon />}>
+              Templates
+            </Button>
+          </>
+        )}
+        {/* <Button variant="primary" startIcon={<AddCircleOutlineIcon />}>
           Campaign
-        </Button>
+        </Button> */}
         <Button variant="outlined" startIcon={<FolderOpenIcon />}>
           Folder
         </Button>

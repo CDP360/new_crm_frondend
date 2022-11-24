@@ -1,10 +1,6 @@
 import React from "react";
-
 import Table from "react-bootstrap/Table";
-import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
-import Button from "@mui/material/Button";
 import Folder from "../../Assests/path.svg";
-import FolderOpenIcon from "@mui/icons-material/FolderOpen";
 import edit from "../../Assests/Group 152.svg";
 import Delete from "../../Assests/Group 157.svg";
 import copy from "../../Assests/Group 156.svg";
