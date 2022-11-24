@@ -1,6 +1,8 @@
 import React from "react";
 import "./sidebar.css";
-import Dashboard from "../../Assests/dashboard.png";
+import Dashboard from "../../Assests/dashboard-active.svg";
+import Automation from '../../Assests/Automation.svg';
+import Marketing from '../../Assests/email.svg'
 import { useNavigate } from "react-router-dom";
 
 function Sidebar() {
@@ -19,11 +21,11 @@ function Sidebar() {
           className="dashboard-block"
           onClick={() => navigate("/automation")}
         >
-          <img src={Dashboard} className="sidebar-img" />
+          <img src={Automation} className="sidebar-img" />
           <p className="sidebar-name">Automation</p>
         </div>
         <div className="dashboard-block" onClick={() => navigate("/campaign")}>
-          <img src={Dashboard} className="sidebar-img" />
+          <img src={Marketing} className="sidebar-img" />
           <p className="sidebar-name">Marketing</p>
         </div>
       </div>

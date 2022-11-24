@@ -1,8 +1,8 @@
 import React from 'react'
 import './Header.css'
-import Notification from '../../Assests/notification.png'
-import Search from '../../Assests/search.png'
-import Setting from '../../Assests/settings.png'
+import Notification from '../../Assests/Group 2.svg'
+import Search from '../../Assests/Group 4.svg'
+import Setting from '../../Assests/Group 1.svg'
 
 function Header() {
   return (
