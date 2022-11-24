@@ -24,8 +24,8 @@ function Automation() {
       <div style={{ borderBottom: "2px solid rgba(49, 57, 73, 0.14)" }}>
         <div className="automation-container" style={{ display: "flex" }}>
           <div className="automation-header-left" style={{ display: "flex" }}>
-            <p onClick={showWorkFlowBtn}>Workflow</p>
-            <p onClick={showCampaignbtn}>Campaigns</p>
+            <p onClick={showWorkFlowBtn} style={{cursor:'pointer'}}>Workflow</p>
+            <p onClick={showCampaignbtn} style={{cursor:'pointer'}}>Campaigns</p>
             <p>Triggers</p>
           </div>
           <div className="automation-header-right">

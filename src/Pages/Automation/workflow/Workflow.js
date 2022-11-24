@@ -10,23 +10,24 @@ const Workflow = () => {
     <div>
       <div className="automation-body">
         <div className="automation-body-left">
-          <div className="automation-left-filter">
-            <img src={Folder} alt="Folder" />
-            <p className="automation-filter-p">Filters</p>
-          </div>
-          <div className="automation-left-option">
-            <p>All</p>
-          </div>
-          <hr />
-          <div className="automation-left-option">
-            <p>Draft</p>
-          </div>
-          <hr />
-          <div>
-            <p className="automation-left-option">Published</p>
-          </div>
-          <hr />
+        <div className="automation-left-filter">
+          <img src={Folder} alt="Folder" />
+          <p style={{marginBottom:'auto'}}>Filters</p>
         </div>
+        <hr style={{marginTop:'auto',marginBottom:'auto'}}/>
+        <div className="automation-left-option">
+          <p style={{marginBottom:'auto',marginTop:'auto'}}>All</p>
+        </div>
+        <hr style={{marginTop:'auto',marginBottom:'auto'}} />
+        <div className="automation-left-option">
+          <p style={{marginTop:'auto',marginBottom:'auto'}}>Draft</p>
+        </div>
+        <hr style={{marginTop:'auto',marginBottom:'auto'}} />
+        <div className="automation-left-option">
+          <p style={{marginTop:'auto',marginBottom:'auto'}} >Published</p>
+        </div>
+        <hr style={{marginTop:'auto',marginBottom:'auto'}} />
+      </div>
         <div className="automation-body-right">
           <Table>
             <thead>
