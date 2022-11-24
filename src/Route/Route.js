@@ -7,6 +7,7 @@ import Marketing from "./../Pages/Marketing/Marketing";
 import Templates from "../Pages/Marketing/Templates";
 import Campaign from "./../Pages/Marketing/Campaign";
 import Tablecampaign from "./../Pages/Marketing/Tablecampaign";
+import Promotion from './../Pages/Dashboard/Promotion';
 
 function Routers() {
   return (
@@ -15,6 +16,7 @@ function Routers() {
         <Routes>
           <Route path="" element={<MainContainer />}>
             <Route path="" element={<Dashboard />} />
+             <Route path="/promotion" element={<Promotion/>}/>
             <Route path="/automation" element={<Automation />} />
             <Route path="/campaign" element={<Campaign />}>
               <Route path="/campaign" element={<Tablecampaign />} />
