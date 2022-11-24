@@ -18,7 +18,7 @@ function Routers() {
             <Route path="" element={<Dashboard />} />
              <Route path="/promotion" element={<Promotion/>}/>
             <Route path="/automation" element={<Automation />} />
-            <Route path="/campaign" element={<Campaign />}>
+            <Route path="/campaign" element={<Campaign/>}>
               <Route path="/campaign" element={<Tablecampaign />} />
               <Route path="/campaign/templetes" element={<Templates />} />
             </Route>
