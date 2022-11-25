@@ -24,7 +24,7 @@ function Sidebar() {
           <img src={Automation} className="sidebar-img" />
           <p className="sidebar-name">Automation</p>
         </div>
-        <div className="dashboard-block" onClick={() => navigate("/campaign")}>
+        <div className="dashboard-block" onClick={() => navigate("/marketing")}>
           <img src={Marketing} className="sidebar-img" />
           <p className="sidebar-name">Marketing</p>
         </div>

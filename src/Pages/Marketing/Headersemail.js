@@ -10,12 +10,12 @@ function Headersemail() {
   const [headerbutton, setHeaderButton] = useState(true);
 
   const Campaigns = () => {
-    navigate("/campaign");
+    navigate("/marketing");
     setHeaderButton(true);
   };
 
   const Template = () => {
-    navigate("/campaign/templetes");
+    navigate("/marketing/templetes");
     setHeaderButton(false);
   };
   return (

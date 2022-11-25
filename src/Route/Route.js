@@ -6,9 +6,9 @@ import Automation from "./../Pages/Automation/Automation";
 import Promotion from "../Pages/Dashboard/Promotion";
 import Tablecampaign from "../Pages/Marketing/Tablecampaign";
 import Templates from "../Pages/Marketing/Templates";
-import Campaign from "../Pages/Marketing/Campaign";
 import Workflow from "../Pages/Automation/workflow/Workflow";
 import Campaigns from "../Pages/Automation/campaigns/Campaigns";
+import Marketing from './../Pages/Marketing/Marketing';
 
 function Routers() {
   return (
@@ -22,12 +22,11 @@ function Routers() {
               <Route path="/automation" element={<Workflow />} />
               <Route path="/automation/Campaigns" element={<Campaigns />} />
             </Route>
-            <Route path="/campaign" element={<Campaign />}>
-              <Route path="/campaign" element={<Tablecampaign />} />
-              <Route path="/campaign/templetes" element={<Templates />} />
+            <Route path="/marketing" element={<Marketing />}>
+              <Route path="/marketing" element={<Tablecampaign />} />
+              <Route path="/marketing/templetes" element={<Templates />} />
             </Route>
 
-            {/* <Route path="/marketing" element={<Marketing />} /> */}
           </Route>
         </Routes>
       </BrowserRouter>
