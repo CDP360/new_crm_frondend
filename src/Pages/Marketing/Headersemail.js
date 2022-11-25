@@ -60,21 +60,31 @@ function Headersemail() {
       <div className="automation-header-right">
         {headerbutton ? (
           <>
-            <Button variant="primary" startIcon={<AddCircleOutlineIcon />}>
+            <Button
+              variant="primary"
+              style={{ textTransform: "capitalize" }}
+              startIcon={<AddCircleOutlineIcon />}
+            >
               Campaign
             </Button>
           </>
         ) : (
           <>
-            <Button variant="primary" startIcon={<AddCircleOutlineIcon />}>
+            <Button
+              variant="primary"
+              style={{ textTransform: "capitalize" }}
+              startIcon={<AddCircleOutlineIcon />}
+            >
               Templates
             </Button>
           </>
         )}
-        {/* <Button variant="primary" startIcon={<AddCircleOutlineIcon />}>
-          Campaign
-        </Button> */}
-        <Button variant="outlined" startIcon={<FolderOpenIcon />}>
+
+        <Button
+          variant="outlined"
+          style={{ textTransform: "capitalize" }}
+          startIcon={<FolderOpenIcon />}
+        >
           Folder
         </Button>
       </div>

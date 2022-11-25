@@ -21,51 +21,40 @@ function Automation() {
     <div>
       <div
         style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "1%",
-          paddingTop: "2%",
+          borderBottom: "2px solid rgba(49, 57, 73, 0.14)",
+          position: "sticky",
+          top: "50px",
+          height: "100%",
           backgroundColor: "#dfe3de",
-          borderBottom: "1px solid grey",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            width: "25%",
-            justifyContent: "space-around",
-          }}
-        >
-          <p
-            style={{ marginBottom: "auto", marginTop: "auto" }}
-            onClick={showWorkFlowBtn}
-          >
-            Workflow
-          </p>
-          <p
-            style={{ marginBottom: "auto", marginTop: "auto" }}
-            onClick={showCampaignbtn}
-          >
-            Campaigns
-          </p>
-          <p style={{ marginBottom: "auto", marginTop: "auto" }}>Trigger</p>
-        </div>
-        <div className="automation-header-right">
-          <Button
-            variant="primary"
-            startIcon={<AddCircleOutlineIcon />}
-            style={{ textTransform: "capitalize" }}
-          >
-            {workFlowBtn ? "Workflow" : "Campaigns"}
-          </Button>
+        <div className="automation-container" style={{ display: "flex" }}>
+          <div className="automation-header-left" style={{ display: "flex" }}>
+            <p onClick={showWorkFlowBtn} style={{ cursor: "pointer" }}>
+              Workflow
+            </p>
+            <p onClick={showCampaignbtn} style={{ cursor: "pointer" }}>
+              Campaigns
+            </p>
+            <p>Triggers</p>
+          </div>
+          <div className="automation-header-right">
+            <Button
+              variant="primary"
+              style={{ textTransform: "capitalize" }}
+              startIcon={<AddCircleOutlineIcon />}
+            >
+              {workFlowBtn ? "Workflow" : "Campaigns"}
+            </Button>
 
-          <Button
-            variant="outlined"
-            startIcon={<FolderOpenIcon />}
-            style={{ textTransform: "capitalize" }}
-          >
-            Folder
-          </Button>
+            <Button
+              variant="outlined"
+              style={{ textTransform: "capitalize" }}
+              startIcon={<FolderOpenIcon />}
+            >
+              Folder
+            </Button>
+          </div>
         </div>
       </div>
 

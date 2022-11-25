@@ -19,15 +19,20 @@
   padding: 7%;
   cursor: pointer;
 }
-/* .sidebar-img{
-    margin-top: 1%;
-} */
+
 .sidebar-name {
   margin-top: auto;
   margin-bottom: auto;
   font-weight: 500;
   font-size: 17px;
-  color: #ffffff;
   margin-left: 5%;
   font-family: "Poppins";
+}
+
+.active {
+  background-color: white;
+  color: black;
+}
+.deactive {
+  color: white;
 }

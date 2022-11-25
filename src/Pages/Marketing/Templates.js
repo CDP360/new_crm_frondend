@@ -29,7 +29,7 @@ function Templates() {
         </div>
         <hr style={{ marginTop: "auto", marginBottom: "auto" }} />
       </div>
-      <div className="automation-body-right" >
+      <div className="automation-body-right">
         <Table>
           <thead>
             <tr>
