@@ -20,29 +20,35 @@ function Headersemail() {
   };
   return (
     <div
-      className="automation-container"
-      style={{
-        display: "flex",
-        position: "sticky",
-        top: "45px",
-        borderBottom: "2px solid gray",
-        backgroundColor: "#dfe3de",
-        zIndex: "99990000000000000090808098080",
-      }}
-    >
-      <div
-        className="automation-header-left"
-        style={{ display: "flex", width: "71%" }}
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          padding: "1%",
+          paddingTop: "2%",
+          backgroundColor: "#dfe3de",
+          borderBottom: "1px solid grey",
+        }}
       >
-        <p>Social planner</p>
-        <Dropdown>
+        <div
+          style={{
+            display: "flex",
+            width: "75%",
+            justifyContent: "space-around",
+          }}
+        >
+          <p
+            style={{ marginBottom: "auto", marginTop: "auto" }}
+          >
+            Social Planner
+          </p>
+          <Dropdown>
           <Dropdown.Toggle
             variant="light"
             id="dropdown-basic"
             style={{
               border: "none",
               backgroundColor: "#dfe3de",
-              marginTop: "-7%",
+              marginTop: "3%",
             }}
           >
             Email
@@ -53,42 +59,37 @@ function Headersemail() {
             <Dropdown.Item onClick={Template}>Templates</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        <p>Template</p>
-        <p>Trigger links</p>
-        <p>Affiliate manager</p>
-      </div>
-      <div className="automation-header-right">
+          <p
+            style={{ marginBottom: "auto", marginTop: "auto" }}
+          >
+            Templates
+          </p>
+          <p style={{ marginBottom: "auto", marginTop: "auto" }}>Trigger Links</p>
+          <p style={{ marginBottom: "auto", marginTop: "auto" }}>Affiliate Manager</p>
+
+        </div>
+        <div className="automation-header-right">
         {headerbutton ? (
           <>
-            <Button
-              variant="primary"
-              style={{ textTransform: "capitalize" }}
-              startIcon={<AddCircleOutlineIcon />}
-            >
+            <Button variant="primary" startIcon={<AddCircleOutlineIcon />} style={{ textTransform: "capitalize" }}>
               Campaign
             </Button>
           </>
         ) : (
           <>
-            <Button
-              variant="primary"
-              style={{ textTransform: "capitalize" }}
-              startIcon={<AddCircleOutlineIcon />}
-            >
+            <Button variant="primary" startIcon={<AddCircleOutlineIcon />} style={{ textTransform: "capitalize" }}>
               Templates
             </Button>
           </>
         )}
-
-        <Button
-          variant="outlined"
-          style={{ textTransform: "capitalize" }}
-          startIcon={<FolderOpenIcon />}
-        >
+        {/* <Button variant="primary" startIcon={<AddCircleOutlineIcon />}>
+          Campaign
+        </Button> */}
+        <Button variant="outlined" startIcon={<FolderOpenIcon />} style={{ textTransform: "capitalize" }}>
           Folder
         </Button>
+        </div>
       </div>
-    </div>
   );
 }
 

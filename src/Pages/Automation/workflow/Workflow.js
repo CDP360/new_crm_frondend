@@ -24,7 +24,7 @@ const Workflow = () => {
             <p style={{marginBottom:'auto',marginLeft:'10%'}}>Published</p>
           </div>
         </div>
-        <div style={{width:'79.9%',backgroundColor: 'white',height:'75vh',overflow:'auto',borderTopRightRadius:'5px',borderBottomRightRadius:'5px'}}>
+        <div style={{width:'79.9%',backgroundColor: 'white',height:'75vh',overflow:'auto',borderTopRightRadius:'5px',borderBottomRightRadius:'5px',textAlign:'center'}}>
           <Table>
             <thead>
               <tr className="automation-table-heading">
@@ -33,8 +33,7 @@ const Workflow = () => {
                 <th>Active Enrolled</th>
                 <th>Created</th>
                 <th>Last Updated</th>
-                <th></th>
-                <th></th>
+                <th>Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -46,90 +45,86 @@ const Workflow = () => {
                 <td>30 Nov, 2022 </td>
                 <td>
                   <ModeIcon />
-                </td>
-                <td>
                   <DeleteOutlineIcon />
                 </td>
               </tr>
               <tr className="automation-table-body">
-                <td>Demo 2</td>
-                <td>1500</td>
-                <td>900</td>
-                <td>11 Oct, 2022 </td>
-                <td>14 Nov, 2022 </td>
-                <td>
-                  <ModeIcon />
-                </td>
-                <td>
-                  <DeleteOutlineIcon />
-                </td>
-              </tr>
-              <tr className="automation-table-body">
-                <td>Demo 3</td>
-                <td>900</td>
-                <td>700</td>
-                <td>05 Jun, 2022 </td>
-                <td>21 Jul, 2022 </td>
-                <td>
-                  <ModeIcon />
-                </td>
-                <td>
-                  <DeleteOutlineIcon />
-                </td>
-              </tr>
-              <tr className="automation-table-body">
-                <td>Demo 4</td>
+                <td>Demo 1</td>
+                <td>1000</td>
                 <td>800</td>
-                <td>500</td>
-                <td>21 Nov, 2021 </td>
-                <td>29 Nov, 2021 </td>
-                <td>
-                  <ModeIcon />
-                </td>
-                <td>
-                  <DeleteOutlineIcon />
-                </td>
-              </tr>
-              <tr className="automation-table-body">
-                <td>Demo 5</td>
-                <td>1000</td>
-                <td>200</td>
-                <td>06 May, 2021 </td>
-                <td>21 Jun, 2021 </td>
-                <td>
-                  <ModeIcon />
-                </td>
-                <td>
-                  <DeleteOutlineIcon />
-                </td>
-              </tr>
-              <tr className="automation-table-body">
-                <td>Demo 6</td>
-                <td>1200</td>
-                <td>900</td>
-                <td>01 Jan, 2021 </td>
                 <td>21 Nov, 2022 </td>
+                <td>30 Nov, 2022 </td>
                 <td>
                   <ModeIcon />
-                </td>
-                <td>
                   <DeleteOutlineIcon />
                 </td>
               </tr>
               <tr className="automation-table-body">
-                <td>Demo 7</td>
+                <td>Demo 1</td>
                 <td>1000</td>
-                <td>2000</td>
-                <td>01 Nov, 2020 </td>
-                <td>21 Nov, 2020 </td>
+                <td>800</td>
+                <td>21 Nov, 2022 </td>
+                <td>30 Nov, 2022 </td>
                 <td>
                   <ModeIcon />
-                </td>
-                <td>
                   <DeleteOutlineIcon />
                 </td>
               </tr>
-              
+              <tr className="automation-table-body">
+                <td>Demo 1</td>
+                <td>1000</td>
+                <td>800</td>
+                <td>21 Nov, 2022 </td>
+                <td>30 Nov, 2022 </td>
+                <td>
+                  <ModeIcon />
+                  <DeleteOutlineIcon />
+                </td>
+              </tr>
+              <tr className="automation-table-body">
+                <td>Demo 1</td>
+                <td>1000</td>
+                <td>800</td>
+                <td>21 Nov, 2022 </td>
+                <td>30 Nov, 2022 </td>
+                <td>
+                  <ModeIcon />
+                  <DeleteOutlineIcon />
+                </td>
+              </tr>
+              <tr className="automation-table-body">
+                <td>Demo 1</td>
+                <td>1000</td>
+                <td>800</td>
+                <td>21 Nov, 2022 </td>
+                <td>30 Nov, 2022 </td>
+                <td>
+                  <ModeIcon />
+                  <DeleteOutlineIcon />
+                </td>
+              </tr>
+              <tr className="automation-table-body">
+                <td>Demo 1</td>
+                <td>1000</td>
+                <td>800</td>
+                <td>21 Nov, 2022 </td>
+                <td>30 Nov, 2022 </td>
+                <td>
+                  <ModeIcon />
+                  <DeleteOutlineIcon />
+                </td>
+              </tr>
+              <tr className="automation-table-body">
+                <td>Demo 1</td>
+                <td>1000</td>
+                <td>800</td>
+                <td>21 Nov, 2022 </td>
+                <td>30 Nov, 2022 </td>
+                <td>
+                  <ModeIcon />
+                  <DeleteOutlineIcon />
+                </td>
+              </tr>
             </tbody>
           </Table>
         </div>

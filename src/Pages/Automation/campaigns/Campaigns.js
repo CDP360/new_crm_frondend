@@ -7,29 +7,25 @@ import ModeIcon from "@mui/icons-material/Mode";
 
 const Campaigns = () => {
   return (
-    <div style={{height:'80vh',overflow:'auto'}}>
-      <div className="automation-body">
-      <div className="automation-body-left">
-        <div className="automation-left-filter">
-          <img src={Filter} alt="Folder" />
-          <p style={{marginBottom:'auto'}}>Filters</p>
+    <div style={{backgroundColor:'#dfe3de',padding:'2%',height:'100vh'}}>
+      <div style={{display:'flex',justifyContent:'space-between'}}>
+        <div style={{backgroundColor:'white',width:'20%',borderTopLeftRadius:'5px',borderBottomLeftRadius:'5px'}}>
+        <div style={{display:'flex',padding:'3.5%',borderBottom:'1px solid #dfe3de'}}>
+            <img src={Filter} alt="Folder"  style={{marginLeft:'5%'}}/>
+            <p style={{marginBottom:'auto',marginLeft:'5%'}}>Filters</p>
+          </div>
+          <div style={{padding:'3.5%',borderBottom:'1px solid #dfe3de'}}>
+            <p style={{marginBottom:'auto',marginLeft:'10%'}}>All</p>
+          </div>
+          <div style={{padding:'3.5%',borderBottom:'1px solid #dfe3de'}}>
+            <p style={{marginBottom:'auto',marginLeft:'10%'}}>Draft</p>
+          </div>
+          <div style={{padding:'3.5%',borderBottom:'1px solid #dfe3de'}}>
+            <p style={{marginBottom:'auto',marginLeft:'10%'}}>Published</p>
+          </div>
         </div>
-        <hr style={{marginTop:'auto',marginBottom:'auto'}}/>
-        <div className="automation-left-option">
-          <p style={{marginBottom:'auto',marginTop:'auto'}}>All</p>
-        </div>
-        <hr style={{marginTop:'auto',marginBottom:'auto'}} />
-        <div className="automation-left-option">
-          <p style={{marginTop:'auto',marginBottom:'auto'}}>Draft</p>
-        </div>
-        <hr style={{marginTop:'auto',marginBottom:'auto'}} />
-        <div className="automation-left-option">
-          <p style={{marginTop:'auto',marginBottom:'auto'}} >Published</p>
-        </div>
-        <hr style={{marginTop:'auto',marginBottom:'auto'}} />
-      </div>
-        <div className="automation-body-right">
-          <Table>
+        <div style={{width:'79.9%',backgroundColor: 'white',height:'75vh',overflow:'auto',borderTopRightRadius:'5px',borderBottomRightRadius:'5px',textAlign:'center'}}>
+        <Table>
             <thead>
               <tr className="automation-table-heading">
                 <th>Name</th>
@@ -37,7 +33,7 @@ const Campaigns = () => {
                 <th>Active </th>
                 <th>Completed</th>
                 <th>Replied</th>
-                <th></th>
+                <th>Actions</th>
               </tr>
             </thead>
             <tbody>
