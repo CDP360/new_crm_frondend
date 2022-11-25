@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Table from "react-bootstrap/Table";
 import Filter from "../../Assests/Filter.svg";
@@ -8,6 +8,17 @@ import copy from "../../Assests/Group 156.svg";
 import path from "../../Assests/path.svg";
 import vector from "../../Assests/Vector.svg";
 function Templates() {
+  const [hover, setHover] = useState(0);
+
+  function All() {
+    setHover(0);
+  }
+  function Draft() {
+    setHover(1);
+  }
+  function Published() {
+    setHover(2);
+  }
   return (
     <div style={{ backgroundColor: "#dfe3de", padding: "2%", height: "100vh" }}>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
@@ -29,13 +40,37 @@ function Templates() {
             <img src={Filter} alt="Folder" style={{ marginLeft: "5%" }} />
             <p style={{ marginBottom: "auto", marginLeft: "5%" }}>Filters</p>
           </div>
-          <div style={{ padding: "3.5%", borderBottom: "1px solid #dfe3de" }}>
+          <div
+            style={{
+              padding: "3.5%",
+              borderBottom: "1px solid #dfe3de",
+              cursor: "pointer",
+            }}
+            onClick={All}
+            className={`${hover === 0 ? "tableactive" : ""}`}
+          >
             <p style={{ marginBottom: "auto", marginLeft: "10%" }}>All</p>
           </div>
-          <div style={{ padding: "3.5%", borderBottom: "1px solid #dfe3de" }}>
+          <div
+            style={{
+              padding: "3.5%",
+              borderBottom: "1px solid #dfe3de",
+              cursor: "pointer",
+            }}
+            onClick={Draft}
+            className={`${hover === 1 ? "tableactive" : ""}`}
+          >
             <p style={{ marginBottom: "auto", marginLeft: "10%" }}>Draft</p>
           </div>
-          <div style={{ padding: "3.5%", borderBottom: "1px solid #dfe3de" }}>
+          <div
+            style={{
+              padding: "3.5%",
+              borderBottom: "1px solid #dfe3de",
+              cursor: "pointer",
+            }}
+            onClick={Published}
+            className={`${hover === 2 ? "tableactive" : ""}`}
+          >
             <p style={{ marginBottom: "auto", marginLeft: "10%" }}>Published</p>
           </div>
         </div>
@@ -47,7 +82,7 @@ function Templates() {
             overflow: "auto",
             borderTopRightRadius: "5px",
             borderBottomRightRadius: "5px",
-            textAlign:'center'
+            textAlign: "center",
           }}
         >
           <Table>
@@ -63,12 +98,18 @@ function Templates() {
                 <td>Demo1</td>
                 <td>800</td>
                 <td>
-                  <div style={{display:'flex',justifyContent:'space-between',width:'90%'}}>
-                  <img src={edit} />
-                  <img src={Delete} />
-                  <img src={copy} />
-                  <img src={path} />
-                  <img src={vector} />
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      width: "90%",
+                    }}
+                  >
+                    <img src={edit} />
+                    <img src={Delete} />
+                    <img src={copy} />
+                    <img src={path} />
+                    <img src={vector} />
                   </div>
                 </td>
               </tr>
@@ -76,12 +117,18 @@ function Templates() {
                 <td>Demo1</td>
                 <td>800</td>
                 <td>
-                  <div style={{display:'flex',justifyContent:'space-between',width:'90%'}}>
-                  <img src={edit} />
-                  <img src={Delete} />
-                  <img src={copy} />
-                  <img src={path} />
-                  <img src={vector} />
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      width: "90%",
+                    }}
+                  >
+                    <img src={edit} />
+                    <img src={Delete} />
+                    <img src={copy} />
+                    <img src={path} />
+                    <img src={vector} />
                   </div>
                 </td>
               </tr>
@@ -89,12 +136,18 @@ function Templates() {
                 <td>Demo1</td>
                 <td>800</td>
                 <td>
-                  <div style={{display:'flex',justifyContent:'space-between',width:'90%'}}>
-                  <img src={edit} />
-                  <img src={Delete} />
-                  <img src={copy} />
-                  <img src={path} />
-                  <img src={vector} />
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      width: "90%",
+                    }}
+                  >
+                    <img src={edit} />
+                    <img src={Delete} />
+                    <img src={copy} />
+                    <img src={path} />
+                    <img src={vector} />
                   </div>
                 </td>
               </tr>
@@ -102,12 +155,18 @@ function Templates() {
                 <td>Demo1</td>
                 <td>800</td>
                 <td>
-                  <div style={{display:'flex',justifyContent:'space-between',width:'90%'}}>
-                  <img src={edit} />
-                  <img src={Delete} />
-                  <img src={copy} />
-                  <img src={path} />
-                  <img src={vector} />
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      width: "90%",
+                    }}
+                  >
+                    <img src={edit} />
+                    <img src={Delete} />
+                    <img src={copy} />
+                    <img src={path} />
+                    <img src={vector} />
                   </div>
                 </td>
               </tr>
@@ -115,12 +174,18 @@ function Templates() {
                 <td>Demo1</td>
                 <td>800</td>
                 <td>
-                  <div style={{display:'flex',justifyContent:'space-between',width:'90%'}}>
-                  <img src={edit} />
-                  <img src={Delete} />
-                  <img src={copy} />
-                  <img src={path} />
-                  <img src={vector} />
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      width: "90%",
+                    }}
+                  >
+                    <img src={edit} />
+                    <img src={Delete} />
+                    <img src={copy} />
+                    <img src={path} />
+                    <img src={vector} />
                   </div>
                 </td>
               </tr>
@@ -128,12 +193,18 @@ function Templates() {
                 <td>Demo1</td>
                 <td>800</td>
                 <td>
-                  <div style={{display:'flex',justifyContent:'space-between',width:'90%'}}>
-                  <img src={edit} />
-                  <img src={Delete} />
-                  <img src={copy} />
-                  <img src={path} />
-                  <img src={vector} />
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      width: "90%",
+                    }}
+                  >
+                    <img src={edit} />
+                    <img src={Delete} />
+                    <img src={copy} />
+                    <img src={path} />
+                    <img src={vector} />
                   </div>
                 </td>
               </tr>
@@ -141,12 +212,18 @@ function Templates() {
                 <td>Demo1</td>
                 <td>800</td>
                 <td>
-                  <div style={{display:'flex',justifyContent:'space-between',width:'90%'}}>
-                  <img src={edit} />
-                  <img src={Delete} />
-                  <img src={copy} />
-                  <img src={path} />
-                  <img src={vector} />
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      width: "90%",
+                    }}
+                  >
+                    <img src={edit} />
+                    <img src={Delete} />
+                    <img src={copy} />
+                    <img src={path} />
+                    <img src={vector} />
                   </div>
                 </td>
               </tr>
