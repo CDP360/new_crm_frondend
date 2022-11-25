@@ -50,3 +50,7 @@
   font-weight: 500;
   font-size: 16px;
 }
+
+.filter-sidebar {
+  background-color: rgba(49, 57, 73, 0.2);
+}
