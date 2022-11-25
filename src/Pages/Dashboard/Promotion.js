@@ -58,18 +58,18 @@ function Promotion() {
           padding: "1.5%",
           display: "flex",
           justifyContent: "space-between",
-          height:'84vh',
+          height:'100vh',
           overflow:'auto',
           paddingBottom:'5%'
         }}
       >
-        <div style={{ width: "55%", backgroundColor: "white", padding: "2%",borderRadius:'10px',height:'70vh' }}>
+        <div style={{ width: "55%", backgroundColor: "white", padding: "2%",borderRadius:'10px',height:'100vh' }}>
           <h3>Email Marketing Performance</h3>
           <div style={{ marginTop: "5%" }}>
             <Funnel
               id="funnel"
               dataSource={dataSource}
-              // palette="Soft Pastel"
+              palette="Soft Pastel"
               argumentField="argument"
               valueField="value"
             >

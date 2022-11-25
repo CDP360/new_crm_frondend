@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Table from "react-bootstrap/Table";
 import './Dashboard.css'
 import c3 from 'c3'
@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Dashboard() {
   const navigate=useNavigate()
-  React.useEffect(() => {
+  useEffect(() => {
     c3.generate({
       bindto: "#chart",
       data: {
@@ -19,7 +19,7 @@ function Dashboard() {
       },
     });
   });
-  React.useEffect(() => {
+  useEffect(() => {
     c3.generate({
       bindto: "#bar",
       data: {

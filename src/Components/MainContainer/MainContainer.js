@@ -9,7 +9,7 @@ function MainContainer() {
         <Sidebar/>
         <div style={{width:'100%'}}>
         <Header/>
-        <div style={{marginTop:'2%'}}>
+        <div>
         <Outlet/>
         </div>
         </div>
