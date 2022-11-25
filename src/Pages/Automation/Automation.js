@@ -19,19 +19,39 @@ function Automation() {
   };
   return (
     <div>
-      <div style={{ borderBottom: "2px solid rgba(49, 57, 73, 0.14)",position: 'sticky',top:'50px',height:"100%",backgroundColor: "#dfe3de", }}>
+      <div
+        style={{
+          borderBottom: "2px solid rgba(49, 57, 73, 0.14)",
+          position: "sticky",
+          top: "50px",
+          height: "100%",
+          backgroundColor: "#dfe3de",
+        }}
+      >
         <div className="automation-container" style={{ display: "flex" }}>
           <div className="automation-header-left" style={{ display: "flex" }}>
-            <p onClick={showWorkFlowBtn} style={{cursor:'pointer'}}>Workflow</p>
-            <p onClick={showCampaignbtn} style={{cursor:'pointer'}}>Campaigns</p>
+            <p onClick={showWorkFlowBtn} style={{ cursor: "pointer" }}>
+              Workflow
+            </p>
+            <p onClick={showCampaignbtn} style={{ cursor: "pointer" }}>
+              Campaigns
+            </p>
             <p>Triggers</p>
           </div>
           <div className="automation-header-right">
-            <Button variant="primary" startIcon={<AddCircleOutlineIcon />}>
+            <Button
+              variant="primary"
+              style={{ textTransform: "capitalize" }}
+              startIcon={<AddCircleOutlineIcon />}
+            >
               {workFlowBtn ? "Workflow" : "Campaigns"}
             </Button>
 
-            <Button variant="outlined" startIcon={<FolderOpenIcon />}>
+            <Button
+              variant="outlined"
+              style={{ textTransform: "capitalize" }}
+              startIcon={<FolderOpenIcon />}
+            >
               Folder
             </Button>
           </div>
