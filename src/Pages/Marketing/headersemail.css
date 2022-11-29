@@ -1,0 +1,13 @@
+.border-data {
+  border-bottom: 2px solid #ce2232;
+  padding-bottom: 2%;
+  cursor: pointer;
+}
+.border-deactive {
+  border-bottom: none;
+}
+.border-data1 {
+  border-bottom: 2px solid #ce2232;
+  /* padding-bottom: 2%; */
+  cursor: pointer;
+}
