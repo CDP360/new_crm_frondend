@@ -49,7 +49,7 @@
   display: flex;
   padding: 1rem 2rem 1rem 2rem;
   background-color: #dfe3de;
-  height:100vh;
+  height: 100vh;
   /* justify-content: space-between; */
 }
 .automation-body-left {
@@ -106,4 +106,8 @@
   font-size: 16px !important;
   color: #313949 !important;
   margin-right: 1rem !important;
+}
+
+.tableactive {
+  background-color: rgba(49, 57, 73, 0.2);
 }
