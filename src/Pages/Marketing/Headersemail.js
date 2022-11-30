@@ -71,7 +71,7 @@ function Headersemail() {
         <div className="automation-header-right">
         {headerbutton ? (
           <>
-            <Button variant="primary" startIcon={<AddCircleOutlineIcon />} style={{ textTransform: "capitalize" }}>
+            <Button startIcon={<AddCircleOutlineIcon />} style={{ textTransform: "capitalize",backgroundColor: '#CE2232',marginRight:'2%',color:'white' }}>
               Campaign
             </Button>
           </>

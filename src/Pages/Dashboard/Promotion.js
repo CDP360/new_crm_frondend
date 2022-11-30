@@ -16,9 +16,10 @@ function Promotion() {
         style={{
           display: "flex",
           justifyContent: "space-between",
-          padding: "1.5%",
+          padding: "0.5%",
           position:'sticky',
-          top:'7%'
+          top:'7%',
+          borderBottom:'1px solid black'
         }}
       >
         <div style={{ display: "flex", width: "50%" }}>
@@ -49,8 +50,8 @@ function Promotion() {
             justifyContent: "space-around",
           }}
         >
-          <button>11/06/2022</button>
-          <button>11/06/2022</button>
+          <button style={{backgroundColor:'white',border:'none',borderRadius:'5px'}}>11/06/2022</button>
+          <button style={{backgroundColor:'white',border:'none',borderRadius:'5px'}}>11/06/2022</button>
         </div>
       </div>
       <div
@@ -58,9 +59,10 @@ function Promotion() {
           padding: "1.5%",
           display: "flex",
           justifyContent: "space-between",
-          height:'100vh',
+          height:'90vh',
           overflow:'auto',
-          paddingBottom:'5%'
+          paddingBottom:'5%',
+          marginTop:'1.5%'
         }}
       >
         <div style={{ width: "55%", backgroundColor: "white", padding: "2%",borderRadius:'10px',height:'100vh' }}>

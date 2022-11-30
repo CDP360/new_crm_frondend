@@ -52,9 +52,8 @@ function Automation() {
         </div>
         <div className="automation-header-right">
           <Button
-            variant="primary"
             startIcon={<AddCircleOutlineIcon />}
-            style={{ textTransform: "capitalize" }}
+            style={{ textTransform: "capitalize",backgroundColor: '#CE2232',marginRight:'2%',color:'white' }}
           >
             {workFlowBtn ? "Workflow" : "Campaigns"}
           </Button>
@@ -62,7 +61,7 @@ function Automation() {
           <Button
             variant="outlined"
             startIcon={<FolderOpenIcon />}
-            style={{ textTransform: "capitalize" }}
+            style={{ textTransform: "capitalize"}}
           >
             Folder
           </Button>

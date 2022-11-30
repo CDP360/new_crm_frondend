@@ -7,18 +7,18 @@ import { useNavigate } from 'react-router-dom';
 
 function Dashboard() {
   const navigate=useNavigate()
-  useEffect(() => {
-    c3.generate({
-      bindto: "#chart",
-      data: {
-        columns: [
-          ["data1", 30, 200, 100, 400, 150, 250],
-          ["data2", 50, 20, 10, 40, 15, 25],
-        ],
-        type: "line",
-      },
-    });
-  });
+  // useEffect(() => {
+  //   c3.generate({
+  //     bindto: "#chart",
+  //     data: {
+  //       columns: [
+  //         ["data1", 30, 200, 100, 400, 150, 250],
+  //         ["data2", 50, 20, 10, 40, 15, 25],
+  //       ],
+  //       type: "line",
+  //     },
+  //   });
+  // });
   useEffect(() => {
     c3.generate({
       bindto: "#bar",
@@ -33,7 +33,7 @@ function Dashboard() {
   });
   return (
     <div style={{height:'100vh', backgroundColor: "#dfe3de", padding: "1.5%" , overflow:'auto'}}>
-      <div style={{display:'flex',justifyContent:'space-between'}}>
+      <div style={{display:'flex',justifyContent:'space-between',marginTop:'1%'}}>
         <div style={{backgroundColor:'white',padding:'3%',width:'18%',borderRadius:'10px'}}>
           <p style={{marginTop:'auto',marginBottom:'auto'}}>Emails Sent</p>
           <p style={{marginTop:'auto',marginBottom:'auto'}}>Rs 2,00,000</p>
@@ -55,7 +55,7 @@ function Dashboard() {
           <p style={{marginTop:'auto',marginBottom:'auto'}}>Rs 2,00,000</p>
         </div>
       </div>
-      <div style={{backgroundColor:'white',padding:'2%',marginTop:'2%',borderRadius:'10px'}}>
+      {/* <div style={{backgroundColor:'white',padding:'2%',marginTop:'2%',borderRadius:'10px'}}>
         <div style={{display:'flex',justifyContent:'space-between'}}>
           <p style={{marginTop:'auto',marginBottom:'auto'}}>Account Type : Personal Account</p>
           <div style={{display:'flex',justifyContent:'space-between',width:'17%'}}>
@@ -69,12 +69,12 @@ function Dashboard() {
         </div>
         <div id="chart"></div>
         
-      </div>
-      <div style={{backgroundColor:'white',padding:'2%',marginTop:'2%',borderRadius:'10px'}}>
-          <p style={{marginTop:'auto',marginBottom:'auto'}}>Account Type : Personal Account</p>
+      </div> */}
+      <div style={{backgroundColor:'white',padding:'1%',marginTop:'2%',borderRadius:'10px'}}>
+          {/* <p style={{marginTop:'auto',marginBottom:'auto'}}>Account Type : Personal Account</p> */}
         <div id="bar"></div>
       </div>
-      <div className="table-container">
+      <div className="table-container" style={{marginBottom:'3%'}}>
         <h5>Promotions</h5>
           <Table>
             <thead>
